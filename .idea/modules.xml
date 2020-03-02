@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/jbasic/jbasic.iml" filepath="$PROJECT_DIR$/jbasic/jbasic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jtutorial.iml" filepath="$PROJECT_DIR$/jtutorial.iml" />
+    </modules>
+  </component>
+</project>
