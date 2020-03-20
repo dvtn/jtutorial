@@ -63,10 +63,11 @@ public class EnhancedForLoop {
         //java.lang.NullPointerException
         //这个s是我们从list里面获取出来的，在获取前，最好做一个判断
         //这就是迭代器的功能
-        if(list1!=null)
-        for(String s:list1){
+        if(list1!=null){
+            for(String s:list1){
 
-            System.out.println(s);
+                System.out.println(s);
+            }
         }
 
         //其实，增强for循环是用来替换迭代器的
