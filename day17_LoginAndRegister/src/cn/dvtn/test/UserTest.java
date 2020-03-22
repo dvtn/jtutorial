@@ -38,7 +38,7 @@ public class UserTest {
                     boolean flag = ud.isLogin(username, password);
                     if (flag) {
                         System.out.println("登录成功");
-                        break;
+                        System.exit(0);
                     } else {
                         System.out.println("用户名或者密码有误，登录失败");
                     }
