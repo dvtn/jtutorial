@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/day16_Jdk5NewFeatures/day16_Jdk5NewFeatures.iml" filepath="$PROJECT_DIR$/day16_Jdk5NewFeatures/day16_Jdk5NewFeatures.iml" />
       <module fileurl="file://$PROJECT_DIR$/day16_List_Practice/day16_List_Practice.iml" filepath="$PROJECT_DIR$/day16_List_Practice/day16_List_Practice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/day17_LoginAndRegister/day17_LoginAndRegister.iml" filepath="$PROJECT_DIR$/day17_LoginAndRegister/day17_LoginAndRegister.iml" />
       <module fileurl="file://$PROJECT_DIR$/day16_Generic/jbasic.iml" filepath="$PROJECT_DIR$/day16_Generic/jbasic.iml" />
       <module fileurl="file://$PROJECT_DIR$/jtutorial.iml" filepath="$PROJECT_DIR$/jtutorial.iml" />
     </modules>
