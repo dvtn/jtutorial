@@ -2,6 +2,7 @@ package cn.dvtn.test;
 
 import cn.dvtn.dao.UserDao;
 import cn.dvtn.dao.impl.UserDaoImpl;
+import cn.dvtn.game.GuessNumber;
 import cn.dvtn.pojo.User;
 
 import java.util.Scanner;
@@ -37,8 +38,23 @@ public class UserTest {
                     //UserDao ud = new UserDaoImpl();
                     boolean flag = ud.isLogin(username, password);
                     if (flag) {
-                        System.out.println("登录成功");
+                        System.out.println("登录成功, 可以开始玩游戏了");
+
+                        //调用其它模块程序
+                        System.out.println("你确认启动游戏吗？y/n");
+                        while(true) {
+                            String result = sc.nextLine();
+                            if (result.equalsIgnoreCase("y")) {
+                                GuessNumber.start();
+                                System.out.println("你确认启动游戏吗？y/n");
+                            } else {
+                                break;
+                            }
+                        }
+                        System.out.println("谢谢使用，欢迎下次再来");
                         System.exit(0);
+                        //break; //这里的break结束的是switch而不是外面的循环
+
                     } else {
                         System.out.println("用户名或者密码有误，登录失败");
                     }
