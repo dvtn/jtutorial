@@ -7,6 +7,8 @@ import java.util.LinkedHashSet;
  * 哈希表保证元素唯一性
  * 链表保证元素有序
  *
+ * LinkedHashSet特点: 有序与唯一
+ *
  */
 public class LinkedHashSetTest {
     public static void main(String[] args) {
