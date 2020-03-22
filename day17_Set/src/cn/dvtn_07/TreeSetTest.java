@@ -1,5 +1,6 @@
 package cn.dvtn_07;
 
+import java.util.Comparator;
 import java.util.TreeSet;
 
 /**
@@ -13,7 +14,18 @@ import java.util.TreeSet;
 public class TreeSetTest {
     public static void main(String[] args) {
         //创建集合对象
-        TreeSet<Student> ts = new TreeSet<Student>();
+        //TreeSet<Student> ts = new TreeSet<Student>(new MyComparator());
+        //如果一个方法的参数是接口，那么真正的是接口的实现类
+        //而匿名内部类就可以实现这个东西
+        TreeSet<Student> ts = new TreeSet<>(new Comparator<Student>() {
+            @Override
+            public int compare(Student o1, Student o2) {
+                int num = o1.getName().length()-o2.getName().length();
+                int num2 = num==0?o1.getName().compareTo(o2.getName()):num;
+                int num3 = num2==0?o1.getAge()-o2.getAge():num2;
+                return num3;
+            }
+        });
 
         //创建元素
         Student s1 = new Student("独孤求败", 27);
