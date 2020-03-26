@@ -6,6 +6,7 @@ import java.util.Set;
 /**
  * LinkedHashMap:
  *  Map接口的哈希表和链表实现，具有可预知的迭代顺序。
+ *  由哈希表保证键的唯一性，由链表保证存取顺序。
  */
 
 public class LinkedHashMapTest {
